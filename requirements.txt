@@ -1,3 +1,4 @@
+--find-links https://download.pytorch.org/whl/torch_stable.html
 pandas
 nltk
 annoy
@@ -8,3 +9,5 @@ scikit-learn
 tqdm
 ipywidgets
 graphviz
+torch===1.2.0
+pytorch-transformers
