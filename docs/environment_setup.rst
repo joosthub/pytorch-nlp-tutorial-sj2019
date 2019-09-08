@@ -97,19 +97,8 @@ To install CUDA:
 
 Make sure you have the latest CUDA and CUDNN.
 
-2d. Install PyTorch
-^^^^^^^^^^^^^^^^^^^
 
-There are instructions on http://pytorch.org which detail how to install it.
-If you have been following along so far and have Anaconda installed with CUDA enabled, you can simply do:
-
-
-.. code-block:: bash
-
-   conda install pytorch torchvision -c pytorch
-
-
-2e. Clone (or Download) Repository
+2d. Clone (or Download) Repository
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 At this point, you may have already cloned the tutorial repository.  But if
@@ -117,16 +106,16 @@ you have not, you will need it for the next step.
 
 .. code-block:: bash
 
-   git clone https://github.com/joosthub/pytorch-nlp-tutorial-eu2018.git
+   git clone https://github.com/joosthub/pytorch-nlp-tutorial-sj2019
 
 If you do not have git or do not want to use it, you can also
-`download the repository as a zip file <https://github.com/joosthub/pytorch-nlp-tutorial-eu2018/archive/master.zip>`_
+`download the repository as a zip file <https://github.com/joosthub/pytorch-nlp-tutorial-sj2019/archive/master.zip>`_
 
-2f. Install Dependencies from Repository
+2e. Install Dependencies from Repository
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Assuming the you have cloned (or downloaded and unzipped) the repository,
-please navigate to the directory in your terminal.  Then, you can do the following:
+please navigate to the directory in your terminal.  Then, you can do the following.  This will also install PyTorch.
 
 .. code-block:: bash
 
