@@ -10,11 +10,11 @@ Natural Language Processing (NLP) with PyTorch
    environment_setup
    faq
 
-   .. toctree::
-      :hidden:
-      :caption: Day 1 Materials
-      
-      day1/solutions
+.. toctree::
+   :hidden:
+   :caption: Day 1 Materials
+   
+   day1/solutions
 ..
    .. toctree::
       :hidden:
