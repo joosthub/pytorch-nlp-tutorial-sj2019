@@ -9,13 +9,13 @@ Natural Language Processing (NLP) with PyTorch
    download_data
    environment_setup
    faq
-..
+
    .. toctree::
       :hidden:
       :caption: Day 1 Materials
       
       day1/solutions
-
+..
    .. toctree::
       :hidden:
       :maxdepth: 3
