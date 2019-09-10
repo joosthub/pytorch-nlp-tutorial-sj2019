@@ -4,7 +4,25 @@ Choose Your Own Adventure
 
 The Choose Your Own Adventures have been structured to allow for pure model exploration without worrying as much about the dataset or the training routine.  In each notebook, you will find an implemented dataset loading routine as well as an implemented training routine.  These two parts should seem familiar to you given the last 2 days of content.  What is not implemented is a model definition nor its instantiation.  
 
-It is up to you what you want to use!  Do you want to build the Continuous Bag of Words (CBOW)?  Use an RNN or a CNN?  Do you want to combine the CNN and RNN?  Try out whatever you like and see if you can get the highest accuracy in class!
+
+There are kinds of NLP Task you could solve:
+
+- Classification
+	- (day_2/CYOA-Amazon-Reviews) Sentiment Analysis with Amazon Reviews
+	- (day_2/CYOA-Movie-Reviews) Sentiment Analysis with Movie Reviews
+	- (day_2/CYOA-Surname-Classification) Surname Classication
+	- (day_2/CYOA-Twitter-Language-ID) Twitter Language ID
+	- (day_2/CYOA-CFPB-Classification) CFPB Classification
+	- News categorization with NLTK's Brown corpus
+	- Question Classification with NLTK's question dataset
+- Sequence Prediction
+	- Language Model with NLTK's Shakespeare dataset
+- Sequence Tagging
+	- NER with NLTK's CoNLL NER dataset
+	- Chunking with NLTK's CoNLL Chunking dataset
+
+The tasks that have notebooks are indicated.  We did not include notebooks for every task to narrow the scope of the in-class work. 
+
 
 Strategies for Model Exploration
 --------------------------------
@@ -50,11 +68,11 @@ More complicated models to try
 1. Better RNNs (Gated Recurrent Unit (GRU), Long Short Term Memory (LSTM))
 	- Instead of using the simple RNN provided, use an RNN variant that has gating like GRU or LSTM
 
+2. BiRNN
+	- Use the bi-directional RNN model from the day_2 notebook
+
 2. CNN + RNN
 	- One thing you could try is to apply a CNN one or more times to create sequences of vectors that are informed by their neighboring vectors.  Then, apply the RNN to learn a sequence model over these vectors.  You can use the same method to pull out the final vector for each sequence, but with one caveat.  If you apply the CNN in a way that shrinks the sequence dimension, then the indices of the final positions won't quite be right. One way to get around this is to have the CNN keep the sequence dimension the same size.  This is done by setting the `padding` argument to be `kernel_size//2`.  For example, if `kernel_size=3`, then it should be that `padding=1`.  Similarly with `kernel_size=5`, then `padding=2`.  The padding is added onto both sides of the sequence dimension. 
-
-3. Deep Averaging Network
-	- The Deep Averaging Network is very similar to CBOW, but has one major differences: it applies an MLP to the pooled vectors. 
 
 4. Using Attention
 	- If you're feeling ambitious, try implementing attention! 

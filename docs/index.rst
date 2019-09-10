@@ -15,18 +15,20 @@ Natural Language Processing (NLP) with PyTorch
    :caption: Day 1 Materials
    
    day1/solutions
-..
-   .. toctree::
-      :hidden:
-      :maxdepth: 3
-      :caption: Day 2 Materials
 
-      day2/warmup
-      day2/failfastprototypemode
-      day2/tensorfu1
-      day2/tensorfu2
-      day2/cyoa
-      extras/index
+.. toctree::
+   :hidden:
+   :maxdepth: 3
+   :caption: Day 2 Materials
+
+   day2/warmup
+   day2/failfastprototypemode
+   day2/tensorfu1
+
+..
+   day2/tensorfu2
+   day2/cyoa
+   extras/index
 
 ..
    day2/cyoa

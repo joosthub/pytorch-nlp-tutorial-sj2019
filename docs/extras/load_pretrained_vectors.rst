@@ -33,7 +33,6 @@ Then, we can load that embedding matrix:
 .. code-block:: python
 
    load_pretrained = True
-   embedding_size = 32
    pretrained_embeddings = None
    
    if load_pretrained:
@@ -47,7 +46,4 @@ And we can use it in an embedding layer:
 
 .. code-block:: python
 
-   emb = nn.Embedding(embedding_dim=embedding_size, 
-                      num_embeddings=num_embeddings, 
-                      padding_idx=0, 
-                      _weight=pretrained_embeddings)
+   emb = nn.Embedding.from_pretrained(embeddings=pretrained_embeddings, freeze=False, padding_idx=0)
