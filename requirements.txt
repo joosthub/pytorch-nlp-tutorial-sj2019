@@ -9,5 +9,5 @@ scikit-learn
 tqdm
 ipywidgets
 graphviz
-torch===1.2.0
+torch===2.2.0
 pytorch-transformers
